@@ -44,7 +44,7 @@ BEGIN {
 }
 
 unless ( defined $ENV{'TEST_BEANSTALK_HOST'} ){
-  diag "Can't test unless the BEANSTALK_HOST variables is set";
+  diag "Can't test unless the TEST_BEANSTALK_HOST variables is set";
   all_done(1);
   exit;
 }
